@@ -13,7 +13,7 @@ RUN apt-get install php -y
 WORKDIR var/www/html
 
 #copy your files, if you want to copy all use COPY . .
-COPY website/projCert/website/. .
+COPY website/. .
 RUN rm -rf index.html
 #now start the server
 EXPOSE 80
