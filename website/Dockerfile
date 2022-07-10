@@ -14,7 +14,7 @@ WORKDIR var/www/html
 
 #copy your files, if you want to copy all use COPY . .
 RUN ls
-COPY website/. .
+COPY . .
 RUN rm -rf index.html
 #now start the server
 EXPOSE 80
